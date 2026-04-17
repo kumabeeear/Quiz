@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pokémon Personality Quiz</h1>
+    <p>Answer all 8 questions to find out which starter Pokémon fits your personality.</p>
+
+    <div class="question">
+      <p>1. How do you deal with stress?</p>
+      <button onclick="selectAnswer(this, 'charmander')">I push through with energy</button>
+      <button onclick="selectAnswer(this, 'squirtle')">I go with the flow</button>
+      <button onclick="selectAnswer(this, 'bulbasaur')">I stay calm and think carefully</button>
+    </div>
+
+    <div class="question">
+      <p>2. In a group project, you usually...</p>
+      <button onclick="selectAnswer(this, 'squirtle')">Keep everyone comfortable</button>
+      <button onclick="selectAnswer(this, 'bulbasaur')">Keep things organized</button>
+      <button onclick="selectAnswer(this, 'charmander')">Take the lead</button>
+    </div>
+
+    <div class="question">
+      <p>3. Your ideal weekend is...</p>
+      <button onclick="selectAnswer(this, 'bulbasaur')">Quiet and cozy</button>
+      <button onclick="selectAnswer(this, 'charmander')">Active and exciting</button>
+      <button onclick="selectAnswer(this, 'squirtle')">Hanging out with friends</button>
+    </div>
+
+    <div class="question">
+      <p>4. How do you make decisions?</p>
+      <button onclick="selectAnswer(this, 'squirtle')">Depends on the situation</button>
+      <button onclick="selectAnswer(this, 'bulbasaur')">Carefully and slowly</button>
+      <button onclick="selectAnswer(this, 'charmander')">Quickly and confidently</button>
+    </div>
+
+    <div class="question">
+      <p>5. Your friends describe you as...</p>
+      <button onclick="selectAnswer(this, 'charmander')">Passionate</button>
+      <button onclick="selectAnswer(this, 'bulbasaur')">Reliable</button>
+      <button onclick="selectAnswer(this, 'squirtle')">Easygoing</button>
+    </div>
+
+    <div class="question">
+      <p>6. When trying something new...</p>
+      <button onclick="selectAnswer(this, 'squirtle')">I see how it goes</button>
+      <button onclick="selectAnswer(this, 'charmander')">I jump right in</button>
+      <button onclick="selectAnswer(this, 'bulbasaur')">I prepare first</button>
+    </div>
+
+    <div class="question">
+      <p>7. Your energy level is usually...</p>
+      <button onclick="selectAnswer(this, 'bulbasaur')">Calm and steady</button>
+      <button onclick="selectAnswer(this, 'squirtle')">Balanced and flexible</button>
+      <button onclick="selectAnswer(this, 'charmander')">High and intense</button>
+    </div>
+
+    <div class="question">
+      <p>8. What motivates you most?</p>
+      <button onclick="selectAnswer(this, 'charmander')">Success and achievement</button>
+      <button onclick="selectAnswer(this, 'bulbasaur')">Stability and comfort</button>
+      <button onclick="selectAnswer(this, 'squirtle')">Enjoyment and connection</button>
+    </div>
+
+    <button class="submit-btn" onclick="showResult()">See My Result</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
